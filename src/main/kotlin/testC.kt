@@ -1,27 +1,18 @@
-package recursion
+class Foo<T>(var x :T,var y : T){
+    fun compare(x : T,y:T):T{
+       if (x is Int && y is Int){
+           if (x > y){
+               return x
+           }
+           return y
 
-object StringPermutation {
-fun permute(str: String, prefix: String = "", curPermutations: MutableList<String> = mutableListOf()): List<String> {
-    if (str.isNotEmpty()) {
-        for (charIdx in str.indices) {
-            val newPrefix = "${prefix}${str[charIdx]}"
-            val strBeforeCurChar = str.substring(0, charIdx)
-            val isLastIdx = charIdx == str.length - 1
-            val strAfterCurChar = if (isLastIdx) "" else str.substring(charIdx + 1)
-            val newStr = "${strBeforeCurChar}${strAfterCurChar}"
+       }
+        return x
 
-            permute(newStr, newPrefix, curPermutations)
-        }
-    } else {
-        curPermutations.add(prefix)
     }
-    println(curPermutations)
-    return curPermutations
 
 }
-}
-fun main(){
-    var s1 = StringPermutation
-    s1.permute("salam","")
 
-}
+
+
+

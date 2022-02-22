@@ -52,4 +52,11 @@ class Customer(var name: String) {
 
 }
 fun main(){
+
+    var customerArr = arrayListOf<Customer>()
+    for(x in 1..20){
+        var c1 = Customer("customer1")
+        customerArr.add(c1)
+    }
+
 }

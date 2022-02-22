@@ -1,5 +1,3 @@
-import java.util.*
-
 //fun main(args: Array<String>) {
 //    println("Hello World!")
 //
@@ -7,14 +5,15 @@ import java.util.*
 //    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
 //    println("Program arguments: ${args.joinToString()}")
 //
+interface Vehicle:PublicTransportationVehicle, ServiceTransportationVehicle,PrivateTransportationVehicle{
 
+}
+interface PrivateTransportationVehicle{
 
-import java.util.*
-import java.util.*
-import kotlin.collections.ArrayList
-import java.util.*
+}
+interface ServiceTransportationVehicle{
 
-import java.util.*
-import java.util.*
-import java.util.*
+}
+interface PublicTransportationVehicle{
 
+}
